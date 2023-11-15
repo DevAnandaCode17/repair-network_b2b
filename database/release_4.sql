@@ -1,0 +1,1 @@
+ALTER TABLE `tbl_quote_details` ADD `bill_to` TEXT NULL DEFAULT NULL AFTER `payment_block`, ADD `unit_price` INT NULL DEFAULT NULL AFTER `bill_to`, ADD `description` TEXT NULL DEFAULT NULL AFTER `unit_price`, ADD `quantity` INT NULL DEFAULT NULL AFTER `description`;

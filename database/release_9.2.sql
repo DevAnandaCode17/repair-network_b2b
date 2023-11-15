@@ -1,0 +1,1 @@
+ALTER TABLE `tbl_enquiries` ADD `insurance_cover` TEXT NULL AFTER `consent_to_contact`;

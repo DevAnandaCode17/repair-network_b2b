@@ -1,0 +1,10 @@
+[10-Oct-2018 12:07:18 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::last_query() in /home/k23b8wm512dc/public_html/repair_network_crm/application/models/User_model.php on line 129
+[19-Oct-2018 11:00:19 Europe/London] PHP Fatal error:  Call to a member function modify() on string in /home/k23b8wm512dc/public_html/repair_network_crm/application/controllers/Quotes.php on line 1297
+[19-Oct-2018 11:00:42 Europe/London] PHP Fatal error:  Call to a member function modify() on string in /home/k23b8wm512dc/public_html/repair_network_crm/application/controllers/Quotes.php on line 1297
+[19-Oct-2018 11:00:55 Europe/London] PHP Fatal error:  Call to a member function modify() on string in /home/k23b8wm512dc/public_html/repair_network_crm/application/controllers/Quotes.php on line 1297
+[31-Dec-2018 13:01:33 Europe/London] PHP Parse error:  syntax error, unexpected '{' in /home/k23b8wm512dc/public_html/repair_network_crm/application/controllers/Quotes.php on line 2599
+[19-Sep-2019 16:51:02 Europe/London] PHP Parse error:  syntax error, unexpected ';' in /home/k23b8wm512dc/public_html/repair_network_crm/application/controllers/Mobapi.php on line 214
+[03-Oct-2019 07:46:52 Europe/London] PHP Parse error:  syntax error, unexpected '$planamount_sorted' (T_VARIABLE) in /home/k23b8wm512dc/public_html/repair_network_crm/application/controllers/Mobapi.php on line 618
+[03-Oct-2019 13:46:56 Asia/Calcutta] PHP Fatal error:  Class 'Twilio\Rest\Client' not found in /home/k23b8wm512dc/public_html/repair_network_crm/application/controllers/Mobapi.php on line 1263
+[03-Oct-2019 13:49:17 Asia/Calcutta] PHP Fatal error:  Class 'Twilio\Rest\Client' not found in /home/k23b8wm512dc/public_html/repair_network_crm/application/controllers/Mobapi.php on line 1263
+[03-Oct-2019 13:59:23 Asia/Calcutta] PHP Fatal error:  Class 'Twilio\Rest\Client' not found in /home/k23b8wm512dc/public_html/repair_network_crm/application/controllers/Mobapi.php on line 1263

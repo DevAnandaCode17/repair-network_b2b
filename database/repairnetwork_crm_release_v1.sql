@@ -1,0 +1,1 @@
+INSERT INTO `tbl_user_groups` (`user_group_id`, `user_group_name`, `user_group_order`, `user_group_active`, `user_group_created`) VALUES ('H', 'Finance Staff  ', '6', '1', '');

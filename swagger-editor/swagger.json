@@ -1,0 +1,155 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "",
+    "version": "1.0.0",
+    "title": "Open API",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://repair-network.co.uk/repair_network_crm/v1/api"
+    }
+  ],
+  "tags": [
+    {
+      "name": "quote",
+      "description": "Everything about your quote",
+      "externalDocs": {
+        "description": "Find out more",
+        "url": "https://repair-network.co.uk/repair_network_crm"
+      }
+    }
+  ],
+  "paths": {
+    "/receivequote": {
+      "post": {
+        "tags": [
+          "quote"
+        ],
+        "summary": "Add a new quote",
+        "operationId": "addQuote",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Receivequote"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successfully returned a list of Quote",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "username"
+                    ],
+                    "properties": {
+                      "status": {
+                        "type": "string"
+                      },
+                      "quote_id": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": [
+              "write:pets",
+              "read:pets"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Receivequote": {
+        "type": "object",
+        "properties": {
+          "reference_id": {
+            "type": "string"
+          },
+          "company_code" : {
+            "type": "string"
+          },
+          "customer_details": {
+            "type": "object",
+            "properties": {
+              "fullname": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "phone_number": {
+                "type": "string"
+              },
+              "postcode": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "calling_time": {
+                "type": "string"
+              }
+            }
+          },
+          "product_details": {
+            "type": "object",
+            "properties": {
+              "appliance_category": {
+                "type": "string"
+              },
+              "appliance_item": {
+                "type": "string"
+              },
+              "make": {
+                "type": "string"
+              },
+              "plan": {
+                "type": "string"
+              },
+              "age_of_appliance": {
+                "type": "string"
+              },
+              "is_warranty": {
+                "type": "string"
+              },
+              "another_insurance": {
+                "type": "string"
+              },
+              "appliance_issue": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "api_key": {
+        "type": "apiKey",
+        "name": "api_key",
+        "in": "header"
+      }
+    }
+  }
+}
